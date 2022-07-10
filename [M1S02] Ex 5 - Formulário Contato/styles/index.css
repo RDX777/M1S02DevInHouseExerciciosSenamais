@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-nav {
+    list-style-type: none;
+    padding: 0;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    background-color: rgb(51, 126, 158);
+}
+
+.menu-nav ul {
+    float: right;
+}
+
+.menu-nav ul li {
+    display: inline;
+}
+
+.menu-nav ul li a {
+    color: aliceblue;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+.menu-nav ul li a:hover {
+    background-color: gray;
+    transition: 300ms;
+}
+
+.titulo-header {
+    width: 100%;
+    background-color: rgb(51, 126, 158);
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.corpo-main {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+h2 {
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px
+}
+
+.principal-div {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.destaque-div1 {
+    width: 98%;    
+}
+
+.destaques-div2 {
+    display: flex;
+}
+
+.destaque-article {
+    display: block;
+    width: 96%;
+    height: 400px;
+    border: groove 0.5em rgb(51, 126, 158);
+    border-radius: 2em;
+    margin: 10px;
+}
+
+@media only screen and (max-width : 480px) {
+    div article {
+        display: inline-table;
+        width: 360px;
+        height: 400px;
+        border: groove 0.5em rgb(51, 126, 158);
+        border-radius: 2em;
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-width : 480px) {
+    div article {
+        display: inline-table;
+        width: 436px;
+        height: 400px;
+        border: groove 0.5em rgb(51, 126, 158);
+        border-radius: 2em;
+        margin: 10px;
+    }
+}
+
+div article p {
+    text-align: justify;
+}
+
+div article img{
+    width: 100%;
+    height: 101px;
+    object-fit: cover;
+    filter: brightness(0.8);
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+div article time {
+    display: flex;
+    justify-content: right;
+    top: 11%;
+    margin: 5px;
+}
+
+h3 {
+    margin: 5px;
+}
+
+p {
+    margin: 5px;
+}
+
+.texto-div {
+    height: 55%;
+}
+
+aside {
+    position: fixed;
+    right: 0;
+    top: 30%;
+    width: 400px;
+    height: 400px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: right;
+}
+
+.aparece-div {
+    border: groove 0.5em rgb(51, 126, 158);
+    border-radius: 2em;
+    width: 0px;
+    height: 0px;
+    transition: width 2s, height 2s;
+    background-color: rgb(255, 255, 255);
+    animation: move 2s;
+    display: none;
+     
+}
+
+@keyframes move { 
+    0% {
+        transform: translate(60vw);
+    }
+    
+}
+
+.apareceBotao {
+    background-color: transparent;
+    animation: movimenta 1s ease alternate infinite;
+    width: 30px;
+    border: none;
+}
+
+@keyframes movimenta {
+    to {
+        transform: translateX(20px);
+    }
+}
+
+.menulateral {
+    margin: 20px;
+}
