@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-nav {
+    list-style-type: none;
+    padding: 0;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    background-color: rgb(51, 126, 158);
+}
+
+.menu-nav ul {
+    float: right;
+}
+
+.menu-nav ul li {
+    display: inline;
+}
+
+.menu-nav ul li a {
+    color: aliceblue;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+.menu-nav ul li a:hover {
+    background-color: gray;
+    transition: 300ms;
+}
+
+.titulo-header {
+    width: 100%;
+    background-color: rgb(51, 126, 158);
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.corpo-main {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+h2 {
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px
+}
+
+.mp {
+    margin: 10px;
+    padding: 5px;
+}
+
+.espaco-itens {
+    width:100px;
+    float:left;
+    display:block;
+}
+
+.contato-form-div {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+
+.contato-input {
+    width: 400px;
+    border: 2px solid;
+    border-color: rgb(51, 126, 158);
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.contato-input:hover {
+    border-color: rgb(39, 88, 157);
+}
+
+.contato-input:focus  {
+    outline: none !important;
+    border:2px solid red;
+}
+
+.contato-enviar {
+    width: 100px;
+    display: inline-block;
+    background-color: #76cd79;
+    border: none;
+    border-radius: 2em;
+}
+
+.contato-enviar:hover {
+    background-color: #24d32a;
+}
